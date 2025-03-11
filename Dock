@@ -1,0 +1,17 @@
+# Dockerfile para TechAutoAds Tracker
+FROM python:3.10
+
+# Define o diretório de trabalho dentro do container
+WORKDIR /app
+
+# Copia os arquivos necessários para o container
+COPY . /app
+
+# Instala as dependências
+RUN pip install --no-cache-dir flask
+
+# Expõe a porta 5000
+EXPOSE 5000
+
+# Comando para rodar a aplicação
+CMD ["python", "Techautoads_Tracker.py"]
