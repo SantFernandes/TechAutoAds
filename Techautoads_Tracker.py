@@ -1,10 +1,4 @@
-from flask import Flask
+git config --global user.name "SantFernandesS30"
+git config --global user.email "GeovaneFernandes@hotmail.com"
 
-app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return "TechAutoAds Tracker Running!"
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
